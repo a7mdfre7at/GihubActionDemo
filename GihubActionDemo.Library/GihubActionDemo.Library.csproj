@@ -6,23 +6,23 @@
     <Title>GihubActionDemo.Library</Title>
     <RootNamespace>GihubActionDemo.Library</RootNamespace>
     <AssemblyName>GihubActionDemo.Library</AssemblyName>
-    <Version>0.0.7</Version>
+    <Version>0.0.8</Version>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
-    <PackageReleaseNotes>$([System.IO.File]::ReadAllText("$(MSBuildProjectDirectory)/../CHANGELOG.md"))</PackageReleaseNotes>
+    <PackageReleaseNotes>$([System.IO.File]::ReadAllText("$(MSBuildProjectDirectory)/../RELEASE-NOTES"))</PackageReleaseNotes>
   </PropertyGroup>
 
   <PropertyGroup>
     <PackageId>GihubActionDemo</PackageId> 
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/a7mdfre7at/GihubActionDemo</RepositoryUrl>
-    <Description>Just a Github actions demo pkg [Nuget Registery github action]</Description>
+    <Description>Just a Github actions demo pkg [Nuget Registery github action] v0.0.8</Description>
     <PackageProjectUrl>https://github.com/a7mdfre7at/GihubActionDemo</PackageProjectUrl>
   </PropertyGroup>
 
-  <Target Name="PrepareReleaseNotes" BeforeTargets="GenerateNuspec">
+  <!--<Target Name="PrepareReleaseNotes" BeforeTargets="GenerateNuspec">
     <PropertyGroup>
-      <PackageReleaseNotes>$([System.IO.File]::ReadAllText("$(MSBuildProjectDirectory)/../CHANGELOG.md"))</PackageReleaseNotes>
+      <PackageReleaseNotes>$([System.IO.File]::ReadAllText("$(MSBuildProjectDirectory)/../RELEASE-NOTES"))</PackageReleaseNotes>
     </PropertyGroup>
-  </Target>
+  </Target>-->
   
 </Project>

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31919.166
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GihubActionDemo.Library", "GihubActionDemo.Library\GihubActionDemo.Library.csproj", "{028B98E5-42F6-4FFF-9AFA-42DE3A2114AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GihubActionDemo.Tests", "GihubActionDemo.Tests\GihubActionDemo.Tests.csproj", "{C19DB874-14E2-4258-988E-3B6B010A9BDB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{028B98E5-42F6-4FFF-9AFA-42DE3A2114AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{028B98E5-42F6-4FFF-9AFA-42DE3A2114AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{028B98E5-42F6-4FFF-9AFA-42DE3A2114AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{028B98E5-42F6-4FFF-9AFA-42DE3A2114AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C19DB874-14E2-4258-988E-3B6B010A9BDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C19DB874-14E2-4258-988E-3B6B010A9BDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C19DB874-14E2-4258-988E-3B6B010A9BDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C19DB874-14E2-4258-988E-3B6B010A9BDB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {859D3DC7-F25E-40C0-A91B-2A5DCFC067BB}
+	EndGlobalSection
+EndGlobal

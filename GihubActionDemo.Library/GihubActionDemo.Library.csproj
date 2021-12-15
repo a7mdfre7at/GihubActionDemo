@@ -6,7 +6,7 @@
     <Title>GihubActionDemo.Library</Title>
     <RootNamespace>GihubActionDemo.Library</RootNamespace>
     <AssemblyName>GihubActionDemo.Library</AssemblyName>
-    <Version>0.0.3</Version>
+    <Version>0.0.4</Version>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <PackageReleaseNotes>$([System.IO.File]::ReadAllText("$(MSBuildProjectDirectory)/../RELEASE-NOTES"))</PackageReleaseNotes>
   </PropertyGroup>

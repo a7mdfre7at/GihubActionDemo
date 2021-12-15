@@ -6,9 +6,9 @@
     <Title>GihubActionDemo.Library</Title>
     <RootNamespace>GihubActionDemo.Library</RootNamespace>
     <AssemblyName>GihubActionDemo.Library</AssemblyName>
-    <Version>0.0.4</Version>
+    <Version>0.0.6</Version>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
-    <!--<PackageReleaseNotes>$([System.IO.File]::ReadAllText("$(MSBuildProjectDirectory)/../RELEASE-NOTES"))</PackageReleaseNotes>-->
+    <PackageReleaseNotes>$([System.IO.File]::ReadAllText("$(MSBuildProjectDirectory)/../CHANGELOG.md"))</PackageReleaseNotes>
   </PropertyGroup>
 
   <PropertyGroup>
@@ -19,10 +19,10 @@
     <PackageProjectUrl>https://github.com/a7mdfre7at/GihubActionDemo</PackageProjectUrl>
   </PropertyGroup>
 
-  <!--<Target Name="PrepareReleaseNotes" BeforeTargets="GenerateNuspec">
+  <Target Name="PrepareReleaseNotes" BeforeTargets="GenerateNuspec">
     <PropertyGroup>
-      <PackageReleaseNotes>$([System.IO.File]::ReadAllText("$(MSBuildProjectDirectory)/../RELEASE-NOTES"))</PackageReleaseNotes>
+      <PackageReleaseNotes>$([System.IO.File]::ReadAllText("$(MSBuildProjectDirectory)/../CHANGELOG.md"))</PackageReleaseNotes>
     </PropertyGroup>
-  </Target>-->
+  </Target>
   
 </Project>

@@ -28,12 +28,6 @@ jobs:
     - name: Test
       run: dotnet test --no-restore --verbosity normal
 
-    - name: Bump versions
-      uses: SiqiLu/dotnet-bump-version@master
-      with:
-        version_files: "**/*.csproj"
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-
     - name: Create Release
       id: create_release
       uses: actions/create-release@v1
@@ -44,4 +38,4 @@ jobs:
         release_name: Release v0.0.4
         body_path: CHANGELOG.md
         draft: false
-        prerelease: false
+        prerelease: true

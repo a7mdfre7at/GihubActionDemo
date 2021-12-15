@@ -26,7 +26,10 @@ jobs:
         with:
           queries: security-and-quality
 
-      - name: Autobuild
+      - name: Install dependencies
+        run: dotnet restore
+
+      - name: Build
         run: dotnet build --configuration Release --no-restore
 
       - name: Perform CodeQL Analysis

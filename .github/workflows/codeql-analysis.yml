@@ -22,7 +22,7 @@ jobs:
           queries: security-and-quality
 
       - name: Autobuild
-        uses: github/codeql-action/autobuild@v1
+        run: dotnet build --configuration Release --no-restore
 
       - name: Perform CodeQL Analysis
         id: analyze_codeql

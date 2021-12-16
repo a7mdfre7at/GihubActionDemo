@@ -1,8 +1,6 @@
 name: Run Tests
 
 on:
-  workflow_call:
-    branches: [ master ]
   workflow_dispatch:
     branches: [ master ]
   push:
@@ -13,8 +11,11 @@ on:
 jobs:
   build:
     uses: a7mdfre7at/GihubActionDemo/.github/workflows/build.yml@master
-  
+    secrets:
+      SOME_SECRET: ${{ secrets.SOME_SECRET }}
+
   test:
+    needs: build
     steps:
     - name: Test
       run: dotnet test --no-restore --verbosity normal

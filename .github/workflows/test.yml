@@ -11,7 +11,7 @@ on:
 
 jobs:
   test:
-    uses: a7mdfre7at/GihubActionDemo/.github/workflows/build@master
+    uses: a7mdfre7at/GihubActionDemo/.github/workflows/build.yml@master
     steps:
     - name: Test
       run: dotnet test --no-restore --verbosity normal

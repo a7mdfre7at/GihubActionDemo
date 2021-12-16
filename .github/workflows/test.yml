@@ -1,6 +1,7 @@
-name: Test
+name: Run Tests
 
 on:
+  workflow_call:
   workflow_dispatch:
     branches: [ master ]
   push:
@@ -13,7 +14,7 @@ jobs:
     runs-on: windows-latest
     steps:
     - uses: actions/checkout@v2
-    - uses: ./.github/workflows/build
+    - uses: a7mdfre7at/GihubActionDemo/.github/workflows/build@master
 
     - name: Test
       run: dotnet test --no-restore --verbosity normal

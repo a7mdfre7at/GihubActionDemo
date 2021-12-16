@@ -5,11 +5,17 @@ on:
       - master # Your default release branch
     paths:
       - 'GihubActionDemo.Library/**'
+  workflow_run:
+    workflows: ["Run Tests"]
+    branches: [master]
+    types: 
+      - completed
 jobs:
-  publish:
-    name: list GihubActionDemo.Library on nuget.org
-    runs-on: windows-latest
-    steps:
+  on-success:
+     runs-on: windows-latest
+     if: ${{ github.event.workflow_run.conclusion == 'success' }}
+     name: list GihubActionDemo.Library on nuget.org
+     steps:
       - uses: actions/checkout@v2
 
       # Required for a specific dotnet version that doesn't come with ubuntu-latest / windows-latest
@@ -29,3 +35,9 @@ jobs:
           TAG_COMMIT: true # Flag to enable / disable git tagging
           TAG_FORMAT: GihubActionDemo.Library-v* # Format of the git tag, [*] gets replaced with version
           NUGET_KEY: ${{secrets.NUGET_API_KEY}} # nuget.org API key
+
+  on-failure:
+     runs-on: ubuntu-latest
+     if: ${{ github.event.workflow_run.conclusion == 'failure' }}
+     steps:
+       - run: exit 1 #echo "First workflow was a failure"    

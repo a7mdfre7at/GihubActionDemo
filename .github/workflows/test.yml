@@ -15,6 +15,7 @@ jobs:
       SOME_SECRET: ${{ secrets.SOME_SECRET }}
 
   test:
+    runs-on: windows-latest
     needs: build
     steps:
     - name: Test

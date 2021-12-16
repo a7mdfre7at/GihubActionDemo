@@ -12,7 +12,7 @@ on:
 
 jobs:
   build:
-    uses: a7mdfre7at/GihubActionDemo/.github/workflows/build.yml@master
+    uses: .github/workflows/build.yml@master
   
   test:
     steps:

@@ -17,7 +17,7 @@ namespace GihubActionDemo.Tests
             int result = calculator.Square(num);
 
             // Assert
-            result.Should().Be(num * num);
+            result.Should().Be(num * num / num);
         }
 
         [Fact]

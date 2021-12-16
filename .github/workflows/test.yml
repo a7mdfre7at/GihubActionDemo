@@ -13,7 +13,7 @@ jobs:
     runs-on: windows-latest
     steps:
     - uses: actions/checkout@v2
-    - uses: ./.github/workflows/build.yml
+    - uses: ./.github/workflows/build
 
     - name: Test
       run: dotnet test --no-restore --verbosity normal

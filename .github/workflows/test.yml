@@ -10,8 +10,10 @@ on:
     branches: [ master ]
 
 jobs:
-  test:
+  build:
     uses: a7mdfre7at/GihubActionDemo/.github/workflows/build.yml@master
+  
+  test:
     steps:
     - name: Test
       run: dotnet test --no-restore --verbosity normal
